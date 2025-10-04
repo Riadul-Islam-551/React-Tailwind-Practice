@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <Daisynav></Daisynav>
+      {/* <Daisynav></Daisynav> */}
       <h1 className="text-2xl text-center my-9 font-bold">Start the project</h1>
       <Hero></Hero>
     </>

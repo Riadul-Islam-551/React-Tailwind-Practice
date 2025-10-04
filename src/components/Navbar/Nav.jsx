@@ -45,9 +45,9 @@ const Nav = () => {
 
   return (
     <div className="shadow-2xs">
-      <nav className="  flex justify-between items-center max-w-[1200px] mx-auto px-4 py-3">
+      <nav className="  flex justify-between items-center max-w-[1200px] mx-auto px-4 py-2 md:py-0">
         {/* ............nav icons............  */}
-        <div className="flex gap-5 cursor-pointer">
+        <div className="flex items-center gap-5 cursor-pointer">
           <span onClick={() => setOpen(!open)}>
             {open ? (
               <CircleX className="md:hidden" />
@@ -55,7 +55,7 @@ const Nav = () => {
               <Menu className="md:hidden" />
             )}
           </span>
-          <ul className={`md:hidden absolute bg-gray-400 ${open ? 'top-16' : '-top-96'} z-10 w-9/10 rounded-2xl`}>
+          <ul className={`md:hidden absolute bg-gray-400 ${open ? 'left-0 top-16' : '-left-[700px] top-16'} duration-1000 z-10 w-full rounded-2xl`}>
             {links}
           </ul>
           <h1 className="text-xl font-bold">My NAV</h1>
