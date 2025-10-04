@@ -4,7 +4,7 @@ const Links = ({links}) => {
   return (
     <div>
       
-        <li className='mx-3 p-2'><a href={links.path}>{links.name}</a></li>
+        <li className='m-3 md:mx-2 p-2 rounded-xl md:rounded text-center bg-gray-700 md:bg-gray-200 text-white md:text-black font-bold'><a href={links.path}>{links.name}</a></li>
       
     </div>
   )

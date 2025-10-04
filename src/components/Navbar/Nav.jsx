@@ -39,22 +39,29 @@ const navLinks = [
 const Nav = () => {
   const [open, setOpen] = useState(false);
 
+  const links = navLinks.map((links) => (
+    <Links key={links.id} links={links}></Links>
+  ));
+
   return (
     <div className="shadow-2xs">
-      <nav className="  flex justify-between items-center max-w-[1200px] mx-auto ">
+      <nav className="  flex justify-between items-center max-w-[1200px] mx-auto px-4 py-3">
         {/* ............nav icons............  */}
-        <span
-          className="flex gap-5 cursor-pointer"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <CircleX /> : <Menu />} <h1>My NAV</h1>
-        </span>
+        <div className="flex gap-5 cursor-pointer">
+          <span onClick={() => setOpen(!open)}>
+            {open ? (
+              <CircleX className="md:hidden" />
+            ) : (
+              <Menu className="md:hidden" />
+            )}
+          </span>
+          <ul className={`md:hidden absolute bg-gray-400 ${open ? 'top-16' : '-top-96'} z-10 w-9/10 rounded-2xl`}>
+            {links}
+          </ul>
+          <h1 className="text-xl font-bold">My NAV</h1>
+        </div>
         {/* ............link list...............  */}
-        <ul className=" flex py-3 justify-center">
-          {navLinks.map((links) => (
-            <Links key={links.id} links={links}></Links>
-          ))}
-        </ul>
+        <ul className="hidden md:flex py-3 justify-center">{links}</ul>
         {/* .............nav button.............  */}
         <button className="btn">Sign In</button>
       </nav>
