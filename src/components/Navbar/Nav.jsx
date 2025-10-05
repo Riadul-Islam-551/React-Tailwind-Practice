@@ -55,7 +55,7 @@ const Nav = () => {
               <Menu className="md:hidden" />
             )}
           </span>
-          <ul className={`md:hidden absolute bg-gray-400 ${open ? 'left-0 top-16' : '-left-[700px] top-16'} duration-1000 z-10 w-full rounded-2xl`}>
+          <ul className={`md:hidden absolute bg-gray-400 ${open ? 'left-0 top-16' : '-left-[800px] top-16'} duration-1000 z-10 w-full rounded-2xl`}>
             {links}
           </ul>
           <h1 className="text-xl font-bold">My NAV</h1>

@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "membership": "Basic Plan",
+    "description": "Access to essential gym equipment and cardio area.",
+    "duration": "1 Month",
+    "price": 1500,
+    "facilities": ["Cardio Zone", "Weight Training", "Locker Access"]
+  },
+  {
+    "id": 2,
+    "membership": "Premium Plan",
+    "description": "Includes trainer support and relaxation facilities.",
+    "duration": "3 Months",
+    "price": 4000,
+    "facilities": ["Personal Trainer", "Steam Room", "Locker Access"]
+  },
+  {
+    "id": 3,
+    "membership": "Elite Plan",
+    "description": "All-inclusive plan with group classes and premium amenities.",
+    "duration": "6 Months",
+    "price": 7500,
+    "facilities": ["CrossFit Area", "Zumba Classes", "Sauna"]
+  }
+]
+
