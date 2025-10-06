@@ -1,5 +1,5 @@
 import React from "react";
-import { Line, LineChart, XAxis, YAxis } from "recharts";
+import { CartesianGrid, Line, LineChart, XAxis, YAxis } from "recharts";
 
 const marksData = [
   {
@@ -78,13 +78,14 @@ const MarksChart = () => {
   return (
     <div className="my-11">
       <h1 className="mt-9 mb-5 font-bold text-2xl text-center">Marks Chart</h1>
-        <LineChart width={600} height={300} data={marksData} className="mx-auto">
-          <XAxis dataKey="name"></XAxis>
-          <YAxis></YAxis>
-          <Line dataKey="mathematics"></Line>
-          <Line dataKey="physics"></Line>
-          <Line dataKey="chemistry"></Line>
-        </LineChart>
+      <LineChart width={700} height={300} data={marksData} className="mx-auto">
+        <XAxis dataKey="name"></XAxis>
+        <YAxis></YAxis>
+        <CartesianGrid stroke="gray" strokeDasharray="5 5" ></CartesianGrid>
+        <Line dataKey="mathematics" stroke="blue"></Line>
+        <Line dataKey="physics" stroke="orange"></Line>
+        <Line dataKey="chemistry" stroke="red"></Line>
+      </LineChart>
     </div>
   );
 };
