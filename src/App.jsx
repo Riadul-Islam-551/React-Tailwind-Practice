@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Daisynav from "./components/Navbar/Daisynav";
 import Nav from "./components/Navbar/Nav";
 import Pricingoptions from "./components/pricingOptions/Pricingoptions";
+import MarksChart from "./components/marksChart/MarksChart";
 
 const pricingOption = fetch("pricing.json").then((res) => res.json());
 
@@ -26,6 +27,7 @@ function App() {
         >
           <Pricingoptions pricingOption={pricingOption}></Pricingoptions>
         </Suspense>
+        <MarksChart></MarksChart>
       </main>
     </>
   );
