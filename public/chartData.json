@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Arafat Hossain",
+    "marks": {
+      "mathematics": 85,
+      "physics": 78,
+      "chemistry": 82
+    }
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "marks": {
+      "mathematics": 91,
+      "physics": 89,
+      "chemistry": 94
+    }
+  },
+  {
+    "id": 3,
+    "name": "Riadul Islam",
+    "marks": {
+      "mathematics": 76,
+      "physics": 81,
+      "chemistry": 79
+    }
+  },
+  {
+    "id": 4,
+    "name": "Sabbir Ahmed",
+    "marks": {
+      "mathematics": 88,
+      "physics": 85,
+      "chemistry": 90
+    }
+  },
+  {
+    "id": 5,
+    "name": "Tamanna Rahman",
+    "marks": {
+      "mathematics": 92,
+      "physics": 95,
+      "chemistry": 89
+    }
+  },
+  {
+    "id": 6,
+    "name": "Rakib Hasan",
+    "marks": {
+      "mathematics": 79,
+      "physics": 84,
+      "chemistry": 77
+    }
+  },
+  {
+    "id": 7,
+    "name": "Sumaiya Akter",
+    "marks": {
+      "mathematics": 83,
+      "physics": 80,
+      "chemistry": 85
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nahidul Islam",
+    "marks": {
+      "mathematics": 87,
+      "physics": 91,
+      "chemistry": 88
+    }
+  },
+  {
+    "id": 9,
+    "name": "Mim Chowdhury",
+    "marks": {
+      "mathematics": 90,
+      "physics": 93,
+      "chemistry": 96
+    }
+  },
+  {
+    "id": 10,
+    "name": "Samiul Karim",
+    "marks": {
+      "mathematics": 82,
+      "physics": 79,
+      "chemistry": 81
+    }
+  }
+]

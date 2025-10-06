@@ -4,7 +4,6 @@ import PricingCard from "./PricingCard";
 
 const Pricingoptions = ({ pricingOption }) => {
   const pricingData = use(pricingOption);
-  console.log(pricingData);
   return (
     <div className="mb-14">
       <h1 className="text-center font-bold mt-9 mb-4 text-2xl">Gym Plan</h1>

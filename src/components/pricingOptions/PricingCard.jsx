@@ -12,8 +12,8 @@ const PricingCard = ({ card }) => {
       <p className="flex-1 my-3 text-sm text-justify px-3">{description}</p>
       <h3 className="font-bold mt-3">Facilities : </h3>
       <div className="flex-1">
-        {facilities.map((facility) => (
-          <Facility facility={facility}></Facility>
+        {facilities.map((facility, index) => (
+          <Facility key={index} facility={facility}></Facility>
         ))}
       </div>
       <div className="mt-6 text-end">

@@ -5,8 +5,12 @@ import Daisynav from "./components/Navbar/Daisynav";
 import Nav from "./components/Navbar/Nav";
 import Pricingoptions from "./components/pricingOptions/Pricingoptions";
 import MarksChart from "./components/marksChart/MarksChart";
+import axios from "axios";
+import ResultChart from "./components/marksChart/ResultChart";
 
 const pricingOption = fetch("pricing.json").then((res) => res.json());
+
+const chartDataPromis = axios.get("chartData.json");
 
 function App() {
   return (
@@ -27,6 +31,15 @@ function App() {
         >
           <Pricingoptions pricingOption={pricingOption}></Pricingoptions>
         </Suspense>
+        {/* .............Axios chart .............. */}
+        <Suspense
+          fallback={
+            <span className="loading loading-spinner loading-xl"></span>
+          }
+        >
+          <ResultChart chartDataPromis={chartDataPromis}></ResultChart>
+        </Suspense>
+        {/*.......... marks chart  ..........*/}
         <MarksChart></MarksChart>
       </main>
     </>
