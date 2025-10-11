@@ -5,7 +5,7 @@ const ResultChart = ({ chartDataPromis }) => {
   const chartArray = use(chartDataPromis);
   const chartData = chartArray.data;
 
-  // ............modify the data ...........
+  // ............modify the json data ...........
   const resultChartData = chartData.map((studentData) => {
     const student = {
       id: studentData.id,
